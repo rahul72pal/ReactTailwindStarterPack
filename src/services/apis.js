@@ -1,7 +1,7 @@
-const BASE_URL = 'https://edtechbackend.rahulpal5.repl.co/api/v1'
+// const BASE_URL = `https://edtechbackend.rahulpal5.repl.co/api/v1`
 // const dotenv = require("dotenv");
-// const BASE_URL = process.env.REACT_APP_BASE_URL
-// console.log(REACT_APP_BASE_URL);
+const BASE_URL = process.env.REACT_APP_BASE_URL
+console.log(process.env.REACT_APP_BASE_URL);
 
 
 
@@ -18,6 +18,7 @@ export const endpoints = {
 export const profileEndpoints = {
     GET_USER_DETAILS_API: BASE_URL + "/profile/getAllUserDetails",
     GET_USER_ENROLLED_COURSES_API: BASE_URL + "/profile/getEnrolledCourse",
+    GET_INSTRUCTOR_DASHBOARD_COURSE_API: BASE_URL + "/profile/instructorDashboard"
 }
 
 
@@ -25,25 +26,25 @@ export const profileEndpoints = {
 export const studentEndpoints = {
     COURSE_PAYMENT_API: BASE_URL + "/payment/capturePayment",
     COURSE_VERIFY_API: BASE_URL + "/payment/verifyingSignature",
-    // SEND_PAYMENT_SUCCESS_EMAIL_API: BASE_URL + "/payment/sendPaymentSuccessEmail",
+    SEND_PAYMENT_SUCCESS_EMAIL_API: BASE_URL + "/payment/sendPaymentSuccessEmail",
 }
 
 // COURSE ENDPOINTS
 export const courseEndpoints = {
     GET_ALL_COURSE_API: BASE_URL + "/course/getallcourse",
     COURSE_DETAILS_API: BASE_URL + "/course/getCourseDetails",
-    // EDIT_COURSE_API: BASE_URL + "/course/editCourse",
+    EDIT_COURSE_API: BASE_URL + "/course/editCourse",
     COURSE_CATEGORIES_API: BASE_URL + "/course/allCategory",
     CREATE_COURSE_API: BASE_URL + "/course/createCourse",
     CREATE_SECTION_API: BASE_URL + "/course/createSection",
     CREATE_SUBSECTION_API: BASE_URL + "/course/createSubSection",
     UPDATE_SECTION_API: BASE_URL + "/course/updateSection",
     UPDATE_SUBSECTION_API: BASE_URL + "/course/updateSubSection",
-    // GET_ALL_INSTRUCTOR_COURSES_API: BASE_URL + "/course/getInstructorCourses",
+    GET_ALL_INSTRUCTOR_COURSES_API: BASE_URL + "/course/getInstructorCourses",
     DELETE_SECTION_API: BASE_URL + "/course/deleteSection",
     DELETE_SUBSECTION_API: BASE_URL + "/course/deleteSubSection",
-    // DELETE_COURSE_API: BASE_URL + "/course/deleteCourse",
-    // GET_FULL_COURSE_DETAILS_AUTHENTICATED: BASE_URL + "/course/getFullCourseDetails",
+    DELETE_COURSE_API: BASE_URL + "/course/deleteCourse",
+    GET_FULL_COURSE_DETAILS_AUTHENTICATED: BASE_URL + "/course/getFullCourseDetails",
     LECTURE_COMPLETION_API: BASE_URL + "/course/updateCourseProgress",
     CREATE_RATING_API: BASE_URL + "/course/addRatingAndReview",
 }
@@ -64,7 +65,7 @@ export const catalogData = {
 }
 // CONTACT-US API
 export const contactusEndpoint = {
-    // CONTACT_US_API: BASE_URL + "/reach/contact",
+    CONTACT_US_API: BASE_URL + "/reach/contact",
 }
 
 // SETTINGS PAGE API

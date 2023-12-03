@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link ,matchPath} from 'react-router-dom'
+import { Link, matchPath } from 'react-router-dom'
 import logo from '../../../assets/Logo/Logo-Full-Light.png'
 import { NavbarLinks } from '../../../data/navbar-links'
 import { useSelector } from 'react-redux'
@@ -8,13 +8,29 @@ import { apiConnector } from '../../../services/apiconnector'
 import { categories } from '../../../services/apis'
 import { BsArrowDownCircle } from 'react-icons/bs'
 import { useLocation } from 'react-router-dom'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
+// import { logout } from '../../../services/opreations/authAPI'
+// import { useNavigate } from 'react-router-dom'
+// import {useDispatch} from 'react-redux'
 
 const Navbar = () => {
 
-    const { token } = useSelector((state) => state.auth);
+    let { token } = useSelector((state) => state.auth);
     const { user } = useSelector((state) => state.profile);
     const { totalItems } = useSelector((state) => state.card);
     const location = useLocation();
+    // const navigate = useNavigate();
+    // const dispatch = useDispatch();
+
+    // console.log("User = ", user);
+    // console.log("Token = ", token);
+
+    // if(!user){
+    //     token=null;
+    //     console.log("User Not Present");
+    // }
+
+
 
     const [sublinks, setsublinks] = useState([]);
     const fetchSublinks = async () => {
@@ -32,7 +48,7 @@ const Navbar = () => {
     }, [])
 
     const matchRoute = (route) => {
-        return matchPath({path:route}, location.pathname);
+        return matchPath({ path: route }, location.pathname);
     }
 
     return (
@@ -61,7 +77,7 @@ const Navbar = () => {
                                                             {sublinks.map((data, index) => (
                                                                 <p className="text-richblack-400 hover:text-richblack-800 font-semibold" key={index}>
                                                                     <Link to={`/catalog/${data.name}`}>
-                                                                    {data.name}
+                                                                        {data.name}
                                                                     </Link>
                                                                 </p>
                                                             ))}
@@ -80,8 +96,8 @@ const Navbar = () => {
                                             </div>
                                         ) : (
                                             <Link to={link?.path}>
-                                                <p className={`${ matchRoute(link?.path) ? "text-yellow-25" : "text-richblack-25"}`}>
-                                                {link.title}
+                                                <p className={`${matchRoute(link?.path) ? "text-yellow-25" : "text-richblack-25"}`}>
+                                                    {link.title}
                                                 </p>
                                             </Link>
                                         )
@@ -93,14 +109,14 @@ const Navbar = () => {
                 </nav>
 
                 {/* login/singup/dashboard/addtocard  */}
-                <div>
+                <div className='flex justify-center items-center gap-x-6'>
                     {
                         user && user?.accountType !== 'instructor' && (
-                            <Link to=".dashedboard/card" className='relative'>
-                                cart
+                            <Link to="/dashboard/cart" className='relative text-[25px] text-blue-50'>
+                                <AiOutlineShoppingCart className='' />
                                 {
                                     totalItems > 0 && (
-                                        <span>{totalItems}</span>
+                                        <span className='absolute text-[14px] -top-2 -right-3 bg-yellow-25 px-[7px] rounded-full text-black  '>{totalItems}</span>
                                     )
                                 }
                             </Link>
@@ -125,12 +141,22 @@ const Navbar = () => {
                         )
                     }
                     {
-                        // token !== null
-                        true
-                         && (
+                        token !== null
+                        && (
                             <Profiledropdown />
                         )
                     }
+                    {/* {
+                        user === null && (
+
+                            <button className='px-2 py-1 bg-richblack-800  text-richblack-100 border-1 border-richblack-200 m-2 rounded-sm'
+                                onClick={()=>{dispatch(logout(navigate))}}
+                            >
+                                Logout
+                            </button>
+
+                        )
+                    } */}
                 </div>
 
             </div>

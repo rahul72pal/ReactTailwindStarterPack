@@ -21,13 +21,16 @@ import img3 from '../assets/Images/Plan_your_lessons.png'
 import instructor from '../assets/Images/Instructor.png'
 import RatingAndReviews from '../components/cors/RatingAndReviews/RatingAndReviews'
 import Footer from '../components/cors/Footer/Footer'
+import ReviewSlider from '../components/common/ReviewSlider'
+import Banner from '../assets/Images/banner.mp4'
+import ExploreMore from '../components/cors/homePage/ExploreMore'
 
 function Home() {
   return (
     <div className='relative'>
       {/* this is Home Page */}
       {/* section 1 */}
-      <section className='flex flex-col justify-center items-center text-white border-2 border-pink-300 font-inter '>
+      <section className='flex flex-col justify-center items-center text-white  font-inter '>
 
         {/* box1 */}
         <div className='flex flex-col justify-center items-center  mt-14 w-[60%] mb-14 '>
@@ -55,9 +58,16 @@ function Home() {
         </div>
 
         {/* box2 */}
-        <div className='w-[935px] h-[415px] mb-16  '>
+        <div className='w-[935px] h-[415px] mb-16 shadow-blue-200 '>
           {/* image */}
-          <img src={image} alt="boxoffice iamge" />
+          {/* <img src={image} alt="boxoffice iamge" /> */}
+          <video
+            muted
+            loop
+            autoPlay
+            >
+            <source  src={Banner} type="video/mp4" />
+            </video>
         </div>
 
         {/* box3 */}
@@ -126,7 +136,7 @@ function Home() {
         </div>
 
         {/* box5 */}
-        <div className='px-[130px] py-[100px] flex flex-col justify-center items-center gap-[98px] border-2 border-pink-200 z-10'>
+        <div className='px-[130px] py-[100px] flex flex-col justify-center items-center gap-[98px]  z-10'>
 
           {/* headings */}
           <div>
@@ -135,7 +145,7 @@ function Home() {
           </div>
 
           {/* blocks */}
-          <div className='flex px-[32px] pt-[52px] border-2 border-pink-400 gap-[36px] '>
+          {/* <div className='flex px-[32px] pt-[52px]  gap-[36px] '>
             <CardBlocks
             heading={"Learn HTML"}
             para={"This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more."}
@@ -162,7 +172,9 @@ function Home() {
             bg={"richblack-800"}
             icon={"richblack-400"}
             />
-          </div>
+          </div> */}
+
+          <ExploreMore/>
 
           <div className='flex  gap-[24px]'>
             <CTAbutton 
@@ -187,11 +199,11 @@ function Home() {
       </section>
 
        {/* frame  */}
-      <div className='absolute top-[2347px] z-0 bg-white '>
+      {/* <div className='absolute top-[2347px] z-0 bg-white '>
         <img  src={frame} alt="frame" />
         {/* <img  src={frame} alt="frame" /> */}
-        {/* <div className='homebgframe'></div> */}
-      </div>
+        {/* <div className='homebgframe'></div> }
+      </div> */}
 
       {/* section 2 */}
       <section className='bg-white relative flex flex-col px-[140px] py-[120px] gap-[52px]'>
@@ -307,7 +319,8 @@ function Home() {
       </div>
 
       {/* rating and review section  */}
-      <RatingAndReviews/>
+      {/* <RatingAndReviews/> */}
+      <ReviewSlider/>
 
       {/* footer */}
       <Footer/>

@@ -51,6 +51,9 @@ function SignupForm() {
       accountType,
     }
 
+    console.log("Form data of the signup form = ",formData);
+    console.log("Signup data from signup form = ",signupData);
+
     // Setting signup data to state
     // To be used after otp verification
     dispatch(setSignupData(signupData))
@@ -81,6 +84,8 @@ function SignupForm() {
       type: ACCOUNT_TYPE.INSTRUCTOR,
     },
   ]
+
+  
 
   return (
     <div>

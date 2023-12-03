@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getPasswordResetToken } from '../services/opreations/authAPI';
 import { FaLongArrowAltLeft } from 'react-icons/fa'
+import Loading from './Loading';
 // import
 
 const ForgotPassword = () => {
@@ -31,7 +32,10 @@ const ForgotPassword = () => {
     console.log("Reset Password Email = ", email);
 
     return (
-        <div className="min-h-screen mt-[-40px] flex justify-center items-center ">
+        <div>
+            {
+                loading ? (<Loading/>) : (
+                    <div className="min-h-screen mt-[-40px] flex justify-center items-center ">
             <div className=" max-w-md w-3/12 p-6 space-y-6 text-white shadow-md rounded-lg">
                 {!EmailSent ? (
                     <form onSubmit={handleResetPassword}>
@@ -107,6 +111,9 @@ const ForgotPassword = () => {
                     Back to login
                 </Link>
             </div>
+        </div>
+                )
+            }
         </div>
     );
 };

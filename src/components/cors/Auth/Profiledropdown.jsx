@@ -20,9 +20,11 @@ const Profiledropdown = () => {
   useOnClickOutside(ref, () => setOpen(false))
   if (!user) return null
 
+  // console.log(open);
+
   return (
-    <button>
-      <div className="flex items-center gap-x-1">
+    <button className='relative' onClick={() => setOpen(!open)}>
+      <div className="flex items-center gap-x-1 relative">
         <img
           src={user?.image}
           alt={`profile-${user?.firstName}`}
@@ -30,10 +32,13 @@ const Profiledropdown = () => {
         />
         <AiOutlineCaretDown className="text-sm text-richblack-100" />
       </div>
-      {open && (
+      {
+      open
+      // true
+       && (
         <div
           onClick={(e) => e.stopPropagation()}
-          className="absolute top-[118%] right-0 z-[1000] divide-y-[1px] divide-richblack-700 overflow-hidden rounded-md border-[1px] border-richblack-700 bg-richblack-800"
+          className="absolute top-[120%] right-0 z-[1000] divide-y-[1px] divide-richblack-700 overflow-hidden rounded-md border-[1px] border-richblack-700 bg-richblack-800"
           ref={ref}
         >
           <Link to="/dashboard/my-profile" onClick={() => setOpen(false)}>

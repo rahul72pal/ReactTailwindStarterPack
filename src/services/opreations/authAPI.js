@@ -15,6 +15,7 @@ const {
 } = endpoints
 
 export function sendOtp(email, navigate) {
+  console.log("Navigate in send otp = ", navigate);
   return async (dispatch) => {
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
@@ -52,6 +53,14 @@ export function signUp(
   otp,
   navigate
 ) {
+  console.log("Acc =", accountType)
+  console.log("firstName =", firstName)
+  console.log("lastName =", lastName)
+  console.log("email =", email)
+  console.log("password =", password)
+  console.log("confirmPassword =", confirmPassword)
+  console.log("otp =", otp)
+  console.log("navigate =", navigate)
   return async (dispatch) => {
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
@@ -75,8 +84,8 @@ export function signUp(
       navigate("/login")
     } catch (error) {
       console.log("SIGNUP API ERROR............", error)
-      toast.error("Signup Failed")
-      navigate("/signup")
+      toast.error(`Signup Failed ${error.response.data.message}`);
+      // navigate("/signup")
     }
     dispatch(setLoading(false))
     toast.dismiss(toastId)
@@ -84,7 +93,7 @@ export function signUp(
 }
 
 export function login(email, password, navigate) {
-  console.log("email=",email,"password=",password);
+  console.log("email=", email, "password=", password);
   return async (dispatch) => {
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
@@ -106,7 +115,10 @@ export function login(email, password, navigate) {
         ? response.data.user.image
         : `https://api.dicebear.com/5.x/initials/svg?seed=${response.data.user.firstName} ${response.data.user.lastName}`
       dispatch(setUser({ ...response.data.user, image: userImage }))
-      localStorage.setItem("token", JSON.stringify(response.data.token))
+      console.log("After set User from login = ", response.data.user)
+      // const tokenExpiration = new Date().getTime() + 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+      localStorage.setItem("token", JSON.stringify(response.data.token));
+      localStorage.setItem("user", JSON.stringify(response.data.user));
       navigate("/dashboard/my-profile")
     } catch (error) {
       console.log("LOGIN API ERROR............", error)
@@ -130,7 +142,7 @@ export function getPasswordResetToken(email, setEmailSent) {
 
       if (!response.data.success) {
         throw new Error(response.data.message)
-        
+
       }
 
       toast.success("Reset Email Sent")
@@ -142,9 +154,10 @@ export function getPasswordResetToken(email, setEmailSent) {
     toast.dismiss(toastId)
     dispatch(setLoading(false))
   }
-}            
+}
 
 export function resetPassword(password, confirmPassword, token, navigate) {
+  console.log(password, confirmPassword, token);
   return async (dispatch) => {
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
@@ -173,6 +186,7 @@ export function resetPassword(password, confirmPassword, token, navigate) {
 }
 
 export function logout(navigate) {
+  console.log("Logout Called")
   return (dispatch) => {
     dispatch(setToken(null))
     dispatch(setUser(null))
