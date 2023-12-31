@@ -124,6 +124,7 @@ const SubSectionModal = ({
     formData.append("description", data.description);
     formData.append("videoUrl", data.lectureVideo);
     setloading(true);
+    console.log("Form Data in Create Sub section",formData);
     //API CALL
     const result = await createSubSection(formData, token);
 

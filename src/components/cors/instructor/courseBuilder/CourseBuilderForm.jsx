@@ -97,7 +97,7 @@ const CourseBuilderForm = () => {
 
   return (
     <div className='text-white mx-auto flex flex-col justify-center items-center px-3 bg-richblack-800 lg:m-[200px] w-[60%] '>
-      <p className='m-4'>Course Builder</p>
+      <p className='m-4'>Course Builder Section</p>
       <form onSubmit={handleSubmit(onSubmit)}
         className='w-[80%] m-4 p-4 text-left bg-richblack-800'>
         <div className='flex flex-col'>

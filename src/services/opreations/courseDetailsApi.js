@@ -142,6 +142,7 @@ export const createSection = async (data, token) => {
 }
 export const createSubSection = async (data, token) => {
     console.log("DATA IN THE CREATE SUB SECTION = ", data);
+    console.log("Form Data in Create Sub section 2",data);
     const toastId = toast.loading("Loading...");
     let result = null;
     try {

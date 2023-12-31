@@ -37,7 +37,7 @@ function Home() {
 
           {/* become an instructor */}
           <Link to="/signup" className='flex items-center gap-2 px-4 py-2 bg-richblack-800 text-richblack-100 text-[19px] mx-7 rounded-[20px]'>
-          <button className=' font-semibold'>Become an instructor </button>
+          <button className=' font-semibold'>Become an instructor to our Plateform </button>
           <FiArrowRight className='mt-1'/>
           </Link>
 
