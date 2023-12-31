@@ -37,14 +37,14 @@ function Home() {
 
           {/* become an instructor */}
           <Link to="/signup" className='flex items-center gap-2 px-4 py-2 bg-richblack-800 text-richblack-100 text-[19px] mx-7 rounded-[20px]'>
-          <button className=' font-semibold'>Become an instructor to </button>
+          <button className=' font-semibold'>Become an instructor </button>
           <FiArrowRight className='mt-1'/>
           </Link>
 
           {/* Heading box */}
           <div className='text-center mt-7  '>
             <div className="flex justify-center items-center mt-7 mb-9 gap-1 text-[36px]">
-             Empower Your Future with <HighLightText text={" Coding Skills"}/>
+             Empower Your Future with Your <HighLightText text={" Coding Skills"}/>
             </div>
             
             <p className='font-medium leading-5 text-richblack-300'>With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors. </p>
