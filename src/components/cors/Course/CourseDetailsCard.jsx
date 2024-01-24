@@ -41,7 +41,7 @@ const CourseDetailsCard = ({ course, setConfirmationModal, handleByCourse }) => 
         toast.success("Link Copied to ClickBoard")
     }
 
-    console.log("User here =",user.accountType);
+    console.log("User here =",user?.accountType);
     console.log("User here =",ACCOUNT_TYPE.INSTRUCTOR);
 
     return (
@@ -61,7 +61,7 @@ const CourseDetailsCard = ({ course, setConfirmationModal, handleByCourse }) => 
                     }
                     className="mb-2 px-3 py-2 bg-yellow-50 w-full text-black font-semibold rounded-xl"
                 >
-                    {user.accountType === ACCOUNT_TYPE.INSTRUCTOR? "Go To Courses":
+                    {user?.accountType === ACCOUNT_TYPE.INSTRUCTOR? "Go To Courses":
                      user && course?.studentenrolled.includes(user?._id) ? "Go to Course" : "Buy Course" }
                 </button>
 
@@ -80,7 +80,7 @@ const CourseDetailsCard = ({ course, setConfirmationModal, handleByCourse }) => 
                 <p>This Course Includes:</p>
                 {course?.instructions && (
                     <div>
-                        {JSON.parse(course.instructions).map((item, index) => (
+                        {JSON.parse(course?.instructions).map((item, index) => (
                             <p key={index} className='flex flex-col gap-3'>
                                 {item}
                             </p>
