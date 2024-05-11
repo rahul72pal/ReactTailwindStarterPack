@@ -1,0 +1,465 @@
+[
+    {
+        "_id": "6561f8254e501b7223c47934",
+        "courseName": "Introduction to React",
+        "courseDescription": "Learn the basics of React and build interactive user interfaces.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Creating components, managing state, handling events",
+        "courseContent": [
+            "65621bccbf2447c52dcc8e8c",
+            "65621bf6bf2447c52dcc8e94",
+            "65622471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 49,
+        "thumbnail": "https://example.com/react-thumbnail.jpg",
+        "instructions": [
+            "Complete each section thoroughly",
+            "Reach out for help if needed"
+        ],
+        "status": "Published",
+        "tag": [
+            "React",
+            "Frontend"
+        ],
+        "category": "6541ef69fce837411aea9a7d",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "6562d0a10f5f7acb4d496ef0",
+        "courseName": "Python Programming Masterclass",
+        "courseDescription": "Dive deep into Python programming and become proficient in building applications.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Data structures, algorithms, web development with Django",
+        "courseContent": [
+            "6562d0b9bc205efbced943f1"
+        ],
+        "ratingandreviws": [],
+        "price": 99,
+        "thumbnail": "https://example.com/python-thumbnail.jpg",
+        "instructions": [
+            "Practice coding exercises regularly",
+            "Apply concepts to real-world projects"
+        ],
+        "status": "Published",
+        "tag": [
+            "Python",
+            "Advanced"
+        ],
+        "category": "6553989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-26T04:59:13.193+00:00",
+        "__v": 0
+    },
+
+    {
+        "_id": "6561f8254e501b7223c47934",
+        "courseName": "React Fundamentals",
+        "courseDescription": "Learn the basics of React and build interactive user interfaces.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Creating components, managing state, handling events",
+        "courseContent": [
+            "65621bccbf2447c52dcc8e8c",
+            "65621bf6bf2447c52dcc8e94",
+            "65622471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 49,
+        "thumbnail": "https://example.com/react-thumbnail.jpg",
+        "instructions": [
+            "Complete each section thoroughly",
+            "Reach out for help if needed"
+        ],
+        "status": "Published",
+        "tag": [
+            "React",
+            "Frontend"
+        ],
+        "category": "6541ef69fce837411aea9a7d",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "6562d0a10f5f7acb4d496ef0",
+        "courseName": "Python Programming Masterclass",
+        "courseDescription": "Dive deep into Python programming and become proficient in building applications.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Data structures, algorithms, web development with Django",
+        "courseContent": [
+            "6562d0b9bc205efbced943f1"
+        ],
+        "ratingandreviws": [],
+        "price": 99,
+        "thumbnail": "https://example.com/python-thumbnail.jpg",
+        "instructions": [
+            "Practice coding exercises regularly",
+            "Apply concepts to real-world projects"
+        ],
+        "status": "Published",
+        "tag": [
+            "Python",
+            "Advanced"
+        ],
+        "category": "6553989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-26T04:59:13.193+00:00",
+        "__v": 0
+    },
+    {
+        "_id": "65a1f8254e501b7223c47934",
+        "courseName": "JavaScript Essentials",
+        "courseDescription": "Get started with JavaScript and learn its core concepts.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Variables, data types, functions, DOM manipulation",
+        "courseContent": [
+            "65a21bccbf2447c52dcc8e8c",
+            "65a21bf6bf2447c52dcc8e94",
+            "65a22471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 29,
+        "thumbnail": "https://example.com/javascript-thumbnail.jpg",
+        "instructions": [
+            "Practice coding exercises regularly",
+            "Experiment with different JavaScript libraries"
+        ],
+        "status": "Published",
+        "tag": [
+            "JavaScript",
+            "Frontend"
+        ],
+        "category": "6553988230c7831a983c8c1c",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "65a2d0a10f5f7acb4d496ef0",
+        "courseName": "Data Structures and Algorithms in C++",
+        "courseDescription": "Master the fundamentals of data structures and algorithms using C++.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Arrays, linked lists, sorting algorithms, recursion",
+        "courseContent": [
+            "65a2d0b9bc205efbced943f1"
+        ],
+        "ratingandreviws": [],
+        "price": 79,
+        "thumbnail": "https://example.com/c++-thumbnail.jpg",
+        "instructions": [
+            "Solve coding challenges daily",
+            "Analyze time and space complexity of algorithms"
+        ],
+        "status": "Published",
+        "tag": [
+            "C++",
+            "Backend"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-26T04:59:13.193+00:00",
+        "__v": 0
+    },
+    {
+        "_id": "65a3f8254e501b7223c47934",
+        "courseName": "Machine Learning Basics",
+        "courseDescription": "An introductory course to machine learning concepts and techniques.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Supervised learning, unsupervised learning, model evaluation",
+        "courseContent": [
+            "65a3bccbf2447c52dcc8e8c",
+            "65a3bf6bf2447c52dcc8e94",
+            "65a32471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 149,
+        "thumbnail": "https://example.com/ml-thumbnail.jpg",
+        "instructions": [
+            "Understand mathematical concepts behind ML algorithms",
+            "Implement ML models using Python libraries"
+        ],
+        "status": "Published",
+        "tag": [
+            "Machine Learning",
+            "Advanced"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "65a4d0a10f5f7acb4d496ef0",
+        "courseName": "Web Development Bootcamp",
+        "courseDescription": "A comprehensive course covering frontend and backend web development.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "HTML, CSS, JavaScript, Node.js, Express.js, MongoDB",
+        "courseContent": [
+            "65a4d0b9bc205efbced943f1"
+        ],
+        "ratingandreviws": [],
+        "price": 199,
+        "thumbnail": "https://example.com/web-dev-thumbnail.jpg",
+        "instructions": [
+            "Practice building projects from scratch",
+            "Collaborate with other students on group projects"
+        ],
+        "status": "Published",
+        "tag": [
+            "Web Development",
+            "Full Stack"
+        ],
+        "category": "65a3986e30c7831a983c8c1a",
+        "studentenrolled": [],
+        "createdAt": "2023-11-26T04:59:13.193+00:00",
+        "__v": 0
+    },
+    {
+        "_id": "65a5f8254e501b7223c47934",
+        "courseName": "Data Science for Beginners",
+        "courseDescription": "An introductory course to data science covering basic concepts and tools.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Data preprocessing, exploratory data analysis, data visualization",
+        "courseContent": [
+            "65a5bccbf2447c52dcc8e8c",
+            "65a5bf6bf2447c52dcc8e94",
+            "65a52471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 79,
+        "thumbnail": "https://example.com/data-science-thumbnail.jpg",
+        "instructions": [
+            "Use Python libraries like Pandas and Matplotlib",
+            "Work on real-world datasets"
+        ],
+        "status": "Published",
+        "tag": [
+            "Data Science",
+            "Beginner"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "65a6d0a10f5f7acb4d496ef0",
+        "courseName": "Java Programming Essentials",
+        "courseDescription": "Get started with Java programming language and learn its core concepts.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Variables, data types, object-oriented programming, exception handling",
+        "courseContent": [
+            "65a6d0b9bc205efbced943f1"
+        ],
+        "ratingandreviws": [],
+        "price": 59,
+        "thumbnail": "https://example.com/java-thumbnail.jpg",
+        "instructions": [
+            "Practice coding exercises regularly",
+            "Implement Java applications from scratch"
+        ],
+        "status": "Published",
+        "tag": [
+            "Java",
+            "Backend"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-26T04:59:13.193+00:00",
+        "__v": 0
+    },
+    {
+        "_id": "65a7f8254e501b7223c47934",
+        "courseName": "Full Stack Web Development",
+        "courseDescription": "Become a full-stack web developer by learning both frontend and backend technologies.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB",
+        "courseContent": [
+            "65a7bccbf2447c52dcc8e8c",
+            "65a7bf6bf2447c52dcc8e94",
+            "65a72471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 249,
+        "thumbnail": "https://example.com/full-stack-thumbnail.jpg",
+        "instructions": [
+            "Build and deploy full-stack applications",
+            "Work on real-world projects"
+        ],
+        "status": "Published",
+        "tag": [
+            "Full Stack",
+            "Web Development"
+        ],
+        "category": "65a3986e30c7831a983c8c1a",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "65a8d0a10f5f7acb4d496ef0",
+        "courseName": "Android App Development",
+        "courseDescription": "Learn to build Android apps from scratch using Java and Android Studio.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "UI design, navigation, database integration, debugging",
+        "courseContent": [
+            "65a8d0b9bc205efbced943f1"
+        ],
+        "ratingandreviws": [],
+        "price": 79,
+        "thumbnail": "https://example.com/android-thumbnail.jpg",
+        "instructions": [
+            "Follow along with step-by-step tutorials",
+            "Test your apps on real devices"
+        ],
+        "status": "Published",
+        "tag": [
+            "Android Development",
+            "Mobile Development"
+        ],
+        "category": "65a3986e30c7831a983c8c1a",
+        "studentenrolled": [],
+        "createdAt": "2023-11-26T04:59:13.193+00:00",
+        "__v": 0
+    },
+    {
+        "_id": "65a9f8254e501b7223c47934",
+        "courseName": "Blockchain Fundamentals",
+        "courseDescription": "Gain a solid understanding of blockchain technology and its applications.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Blockchain architecture, smart contracts, cryptocurrency basics",
+        "courseContent": [
+            "65a9bccbf2447c52dcc8e8c",
+            "65a9bf6bf2447c52dcc8e94",
+            "65a92471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 99,
+        "thumbnail": "https://example.com/blockchain-thumbnail.jpg",
+        "instructions": [
+            "Study blockchain whitepapers",
+            "Explore real-world blockchain projects"
+        ],
+        "status": "Published",
+        "tag": [
+            "Blockchain",
+            "Advanced"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "65aaf8254e501b7223c47934",
+        "courseName": "Artificial Intelligence Basics",
+        "courseDescription": "An introductory course to AI covering basic concepts and applications.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Machine learning, natural language processing, computer vision",
+        "courseContent": [
+            "65aabccbf2447c52dcc8e8c",
+            "65aabf6bf2447c52dcc8e94",
+            "65a92471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 129,
+        "thumbnail": "https://example.com/ai-thumbnail.jpg",
+        "instructions": [
+            "Understand neural networks and deep learning",
+            "Build AI models using Python libraries"
+        ],
+        "status": "Published",
+        "tag": [
+            "Artificial Intelligence",
+            "Beginner"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "65abf8254e501b7223c47934",
+        "courseName": "Cybersecurity Fundamentals",
+        "courseDescription": "Learn the basics of cybersecurity and understand common threats.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Network security, encryption techniques, security protocols",
+        "courseContent": [
+            "65abbccbf2447c52dcc8e8c",
+            "65abbf6bf2447c52dcc8e94",
+            "65a92471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 79,
+        "thumbnail": "https://example.com/cybersecurity-thumbnail.jpg",
+        "instructions": [
+            "Stay updated with the latest cybersecurity news",
+            "Practice ethical hacking techniques"
+        ],
+        "status": "Published",
+        "tag": [
+            "Cybersecurity",
+            "Intermediate"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    },
+    {
+        "_id": "65acd0a10f5f7acb4d496ef0",
+        "courseName": "Cloud Computing Essentials",
+        "courseDescription": "An introductory course to cloud computing covering basic concepts and services.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Cloud deployment models, cloud service models, cloud security",
+        "courseContent": [
+            "65acd0b9bc205efbced943f1"
+        ],
+        "ratingandreviws": [],
+        "price": 59,
+        "thumbnail": "https://example.com/cloud-computing-thumbnail.jpg",
+        "instructions": [
+            "Study cloud providers' documentation",
+            "Practice deploying applications on cloud platforms"
+        ],
+        "status": "Published",
+        "tag": [
+            "Cloud Computing",
+            "Beginner"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-26T04:59:13.193+00:00",
+        "__v": 0
+    },
+    {
+        "_id": "65adf8254e501b7223c47934",
+        "courseName": "DevOps Fundamentals",
+        "courseDescription": "Learn the basics of DevOps and understand its principles and practices.",
+        "instructor": "6547d8f34b5e2c8d367d0ccf",
+        "whatYouWillLearn": "Continuous integration, continuous delivery, infrastructure as code",
+        "courseContent": [
+            "65adbccbf2447c52dcc8e8c",
+            "65adbf6bf2447c52dcc8e94",
+            "65a92471023295268288b7d7"
+        ],
+        "ratingandreviws": [],
+        "price": 69,
+        "thumbnail": "https://example.com/devops-thumbnail.jpg",
+        "instructions": [
+            "Implement DevOps practices in your projects",
+            "Automate deployment processes"
+        ],
+        "status": "Published",
+        "tag": [
+            "DevOps",
+            "Intermediate"
+        ],
+        "category": "65a3989f30c7831a983c8c20",
+        "studentenrolled": [],
+        "createdAt": "2023-11-25T13:35:33.276+00:00",
+        "__v": 2
+    }
+]
